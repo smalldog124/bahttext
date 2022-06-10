@@ -29,6 +29,8 @@ func THBText(v float64) string {
 	stangText := ""
 	if stang != 0 {
 		stangText = fmt.Sprintf("%sสตางค์", thaiText(stang))
+	} else {
+		stangText = "ถ้วน"
 	}
 	log.Println("bath: ", batText, "stang: ", stangText)
 	return fmt.Sprintf("%sบาท%s", batText, stangText)
