@@ -49,3 +49,12 @@ func Test_2345_dot_01_should_be_two_thousand_three_hundred_forty_five_bath(t *te
 
 	assert.Equal(t, expected, actual)
 }
+
+func Test_200_should_be_tow_hundred_bath(t *testing.T) {
+	expected := "สองร้อยบาทถ้วน"
+	baht := 200.0
+
+	actual := bahttext.THBText(baht)
+
+	assert.Equal(t, expected, actual)
+}
