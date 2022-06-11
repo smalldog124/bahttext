@@ -2,7 +2,6 @@ package bahttext
 
 import (
 	"fmt"
-	"log"
 	"strconv"
 	"strings"
 )
@@ -32,7 +31,6 @@ func THBText(v float64) string {
 	} else {
 		stangText = "ถ้วน"
 	}
-	log.Println("bath: ", batText, "stang: ", stangText)
 	return fmt.Sprintf("%sบาท%s", batText, stangText)
 }
 func thaiText(v int) string {
