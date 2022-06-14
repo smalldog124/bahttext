@@ -1,4 +1,4 @@
-module bahttext
+module github.com/smalldog124/bahttext
 
 go 1.18
 
